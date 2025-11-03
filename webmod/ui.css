@@ -1,0 +1,35 @@
+/* Cherry Karaoke — UI clarity (prefix: ck)
+   Делает интерфейс сайтов светлее/контрастнее. Медиа остаются нетронутыми. */
+
+:root{
+  --ck-ui-contrast: 1.04;
+  --ck-ui-brightness: 1.03;
+  --ck-ui-saturate: 1.00;
+  --ck-boost-contrast: 1.07;
+  --ck-boost-brightness: 1.05;
+}
+
+html{
+  filter:
+    contrast(var(--ck-ui-contrast))
+    brightness(var(--ck-ui-brightness))
+    saturate(var(--ck-ui-saturate));
+}
+
+img, video, canvas, picture, svg image, .media, figure img, figure video{
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+figure, .player, .image-viewer, .media-viewer, .lightbox, .gallery, .Photo, .video-outer, .video-inner{
+  filter: none !important;
+}
+
+html.ck-review-boost{
+  filter:
+    contrast(var(--ck-boost-contrast))
+    brightness(var(--ck-boost-brightness))
+    saturate(1);
+}
+
+*{ backface-visibility: hidden; }
