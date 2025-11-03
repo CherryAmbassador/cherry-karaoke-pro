@@ -2,9 +2,9 @@
   "manifest_version": 1,
   "type": "WEB_MOD",
   "name": "Cherry Karaoke — Pro (Cherry Ambassador)",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "developer": "Cherry Ambassador",
-  "description": "CK: чистый, яркий UI + медиачёткость без цветовых сдвигов. Префикс ck. Хоткеи: Ctrl+Alt+1/2/3, 0 — off.",
+  "description": "CK: кастом интерфейса GX + чистый, яркий UI сайтов и чёткость медиаконтента. Префикс ck. Хоткеи: Ctrl+Alt+1/2/3, 0 — off.",
   "styles": [
     "webmod/ui.css",
     "webmod/media.css"
@@ -13,5 +13,8 @@
     "webmod/inject.js"
   ],
   "settings": {},
-  "preview": "assets/preview.png"
+  "preview": "assets/preview.png",
+  "theme": {
+    "config": "theme/theme.json"
+  }
 }
