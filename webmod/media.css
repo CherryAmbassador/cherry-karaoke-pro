@@ -1,0 +1,14 @@
+/* Cherry Karaoke — Media clarity (prefix: ck)
+   По умолчанию включён «низкий» уровень. Переключается хоткеями из inject.js. */
+
+html:not(.ck-sharp-2):not(.ck-sharp-3):not(.ck-sharp-0) img,
+html:not(.ck-sharp-2):not(.ck-sharp-3):not(.ck-sharp-0) video,
+html:not(.ck-sharp-2):not(.ck-sharp-3):not(.ck-sharp-0) canvas{
+  filter: url(#ck-unsharp-1);
+}
+
+html.ck-sharp-2 img, html.ck-sharp-2 video, html.ck-sharp-2 canvas{ filter: url(#ck-unsharp-2); }
+html.ck-sharp-3 img, html.ck-sharp-3 video, html.ck-sharp-3 canvas{ filter: url(#ck-unsharp-3); }
+html.ck-sharp-0 img, html.ck-sharp-0 video, html.ck-sharp-0 canvas{ filter: none !important; }
+
+img, video, canvas{ mix-blend-mode: normal; }
